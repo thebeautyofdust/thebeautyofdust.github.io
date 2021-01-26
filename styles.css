@@ -13,6 +13,10 @@ body {
     flex-direction: column;
 }
 
+label {
+    font-family: CormorantGaramond;
+}
+
 .banner
 {
     position: relative;
@@ -148,23 +152,52 @@ p.copyright {
     margin: 80px 0 0 0;
 }
 
-.contact-container {
+.contact-body
+{
     flex: 1 0 auto;
-    margin-bottom: 80px;
-    padding: 10%;
-    display: flex;
+
 }
 
-.contact-container div
-{
+.contact-container {
+    margin-bottom: 80px;
+    padding: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-container div {
     flex: 2;
 }
 
-.contact-container .spacer
-{
-
+.contact-container .spacer {
     flex: 1;
 }
+
+
+@media (max-width: 700px) {
+    .contact-container .spacer 
+    {
+        flex: 0;
+    }
+}
+
+.contact-container .title {
+    font-size: 2rem;
+    min-width: 220px;
+    margin-bottom: 70px;
+}
+
+.contact-container .contact-details {
+    font-size: 1.6rem;
+    min-width: 220px;
+}
+
+.contact-container .contact-details h3
+{
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
 
 
 .contact-container h1, .contact-container h3, .contact-container h2 
