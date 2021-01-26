@@ -29,6 +29,7 @@ label {
     padding-right: 4vw;
     pointer-events: auto;
     display: flex;
+    min-height: 60px;
 }
 
 .banner .title
@@ -45,7 +46,7 @@ label {
 {
     text-align: right;
     margin-left: auto;
-    padding-left: 1.6vw;
+    padding-left: calc((2 - 1) * 1.2vw + 1px);
     display: flex;
     align-items: center;
 }
